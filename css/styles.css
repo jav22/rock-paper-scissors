@@ -1,0 +1,31 @@
+@media(max-width: 700px){
+    button{
+        font-size: 1.5rem !important;
+    }
+}
+*{
+    background-color:#0b64f4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+button{
+    padding: 0.4rem;
+	margin: 1rem 1.2rem;
+    background-color: #0b64f4;
+    border-color: #fff;
+    border: 0.125rem solid #fff;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: #0b64f4;
+}
+button:active{
+    background-color: #bfbfbf;
+    border-color: #bfbfbf;
+}
