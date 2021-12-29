@@ -75,8 +75,8 @@ function playRound(playerSelection, computerSelection){
         alert("Error in playRound function.");
     }
 	
-    document.querySelector("h3").textContent = playerChose + compChose + result + "\n";
-    document.querySelector("h2").textContent = "You've won " + playerWon + " round(s). Computer has won " + compWon + " round(s).";
+    document.querySelector("h2").textContent = playerChose + compChose + result;
+    document.querySelector("h3").textContent = "You've won " + playerWon + " round(s). Computer has won " + compWon + " round(s).";
 	
     if (playerWon >= 5){
         document.querySelector("h1").textContent = "You won! Press any button to start again.";
