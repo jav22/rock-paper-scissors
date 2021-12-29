@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection){
             playerWon++;
         }
         else{
-            console.log("Error in playRound function.");
+            alert("Error in playRound function.");
         }
     }
 	
@@ -50,7 +50,7 @@ function playRound(playerSelection, computerSelection){
             compWon++;
         }
         else{
-            console.log("Error in playRound function.");
+            alert("Error in playRound function.");
         }
     }
 	
@@ -67,7 +67,7 @@ function playRound(playerSelection, computerSelection){
             result = "It's a draw.";
         }
         else{
-            console.log("Error in playRound function.");
+            alert("Error in playRound function.");
         }
     }
 	
