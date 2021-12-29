@@ -56,11 +56,11 @@ function playRound(playerSelection, computerSelection){
 	
     else if (playerSelection === "scissors"){
         if (computerSelection === "rock"){
-            result = "Rock beats scissors- you lose";
+            result = "Rock beats scissors- you lose.";
             compWon++;
         }
         else if (computerSelection === "paper"){
-            result = "Scissors beats paper- you win";
+            result = "Scissors beats paper- you win.";
             playerWon++;
         }
         else if (computerSelection === "scissors"){
