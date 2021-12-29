@@ -1,22 +1,25 @@
 let playerWon = 0;
 let compWon = 0;
+
 function computerPlay(){
-    let randomChoice = Math.floor(Math.random() * 3 + 1);
+    let randomChoice = Math.floor(Math.random() * 3);
     switch(randomChoice){
-        case 1:
+        case 0:
             return "rock";
-        case 2:
+        case 1:
             return "paper";
-        case 3:
+        case 2:
             return "scissors";
         default:
-            console.log("Error, something went wrong.");
+            alert("Error in computerPlay function.");
     }
 }
+
 function playRound(playerSelection, computerSelection){
     let playerChose = "You chose " + playerSelection + ", ";
     let compChose = "Computer chose " + computerSelection + ", ";
     let result = "";
+	
     if (playerSelection === "rock"){
         if (computerSelection === "rock"){
             result = "It's a draw.";
@@ -33,6 +36,7 @@ function playRound(playerSelection, computerSelection){
             console.log("Error in playRound function.");
         }
     }
+	
     else if (playerSelection === "paper"){
         if (computerSelection === "rock"){
             result = "Paper beats rock- you win.";
@@ -49,6 +53,7 @@ function playRound(playerSelection, computerSelection){
             console.log("Error in playRound function.");
         }
     }
+	
     else if (playerSelection === "scissors"){
         if (computerSelection === "rock"){
             result = "Rock beats scissors- you lose";
@@ -65,11 +70,14 @@ function playRound(playerSelection, computerSelection){
             console.log("Error in playRound function.");
         }
     }
+	
     else{
-        console.log("Error, something happened");
+        alert("Error in playRound function.");
     }
+	
     document.querySelector("h3").textContent = playerChose + compChose + result + "\n";
     document.querySelector("h2").textContent = "You've won " + playerWon + " round(s). Computer has won " + compWon + " round(s).";
+	
     if (playerWon >= 5){
         document.querySelector("h1").textContent = "You won! Press any button to start again.";
     }
@@ -77,6 +85,7 @@ function playRound(playerSelection, computerSelection){
         document.querySelector("h1").textContent = "You lose. Press any button to start again.";
     }
 }
+
 function reset(){
     playerWon = 0;
     compWon = 0;
@@ -84,6 +93,7 @@ function reset(){
     document.querySelector("h2").textContent = "First to five wins";
     document.querySelector("h1").textContent = "Rock Paper Scissors";
 }
+
 document.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", ()=>{
         if (playerWon < 5 && compWon < 5){
