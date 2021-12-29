@@ -17,7 +17,7 @@ function computerPlay(){
 
 function playRound(playerSelection, computerSelection){
     let playerChose = "You chose " + playerSelection + ", ";
-    let compChose = "Computer chose " + computerSelection + ", ";
+    let compChose = "computer chose " + computerSelection + ". ";
     let result = "";
 	
     if (playerSelection === "rock"){
@@ -25,11 +25,11 @@ function playRound(playerSelection, computerSelection){
             result = "It's a draw.";
         }
         else if (computerSelection === "paper"){
-            result = "Paper beats rock- you lose.";
+            result = "Paper beats rock - you lose.";
             compWon++;
         }
         else if (computerSelection === "scissors"){
-            result = "Rock beats scissors- you win.";
+            result = "Rock beats scissors - you win.";
             playerWon++;
         }
         else{
@@ -39,14 +39,14 @@ function playRound(playerSelection, computerSelection){
 	
     else if (playerSelection === "paper"){
         if (computerSelection === "rock"){
-            result = "Paper beats rock- you win.";
+            result = "Paper beats rock - you win.";
             playerWon++;
         }
         else if (computerSelection === "paper"){
             result = "It's a draw.";
         }
         else if (computerSelection === "scissors"){
-            result = "Scissors beats paper- you lose.";
+            result = "Scissors beats paper - you lose.";
             compWon++;
         }
         else{
@@ -56,11 +56,11 @@ function playRound(playerSelection, computerSelection){
 	
     else if (playerSelection === "scissors"){
         if (computerSelection === "rock"){
-            result = "Rock beats scissors- you lose.";
+            result = "Rock beats scissors - you lose.";
             compWon++;
         }
         else if (computerSelection === "paper"){
-            result = "Scissors beats paper- you win.";
+            result = "Scissors beats paper - you win.";
             playerWon++;
         }
         else if (computerSelection === "scissors"){
