@@ -4,26 +4,26 @@
     }
 }
 *{
-    background-color:#0b64f4;
-    color: #fff;
+    background-color:#1a1a1a;
+    color: #f2f2f2;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 button{
     padding: 0.4rem;
 	margin: 1rem 1.2rem;
-    background-color: #0b64f4;
-    border-color: #fff;
-    border: 0.125rem solid #fff;
+    background-color: #1a1a1a;
+    border-color: #f2f2f2;
+    border: 0.125rem solid #f2f2f2;
     border-radius: 0.3rem;
-    color: #fff;
+    color: #f2f2f2;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
 }
 button:hover{
-    background-color: #fff;
-    color: #0b64f4;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
 }
 button:active{
     background-color: #bfbfbf;
