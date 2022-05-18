@@ -1,5 +1,7 @@
 let playerWon = 0;
 let compWon = 0;
+let pRoundStatus = "rounds";
+let cRoundStatus = "rounds";
 
 function computerPlay(){
     let randomChoice = Math.floor(Math.random() * 3);
@@ -75,8 +77,21 @@ function playRound(playerSelection, computerSelection){
         alert("Error in playRound function.");
     }
 	
+	if (playerWon === 1){
+		pRoundStatus = "round";
+	}
+	else{
+		pRoundStatus = "rounds";
+	}
+	if (compWon === 1){
+		cRoundStatus = "round";
+	}
+	else{
+		cRoundStatus = "rounds";
+	}
     document.querySelector("h2").textContent = playerChose + compChose + result;
-    document.querySelector("h3").textContent = "You've won " + playerWon + " round(s). Computer has won " + compWon + " round(s).";
+    //document.querySelector("h3").textContent = "You've won " + playerWon + " round(s). Computer has won " + compWon + " round(s).";
+	document.querySelector("h3").textContent = "You've won " + playerWon + " " + pRoundStatus + ". Computer has won " + compWon + " " + cRoundStatus + ".";
 	
     if (playerWon >= 5){
         document.querySelector("h1").textContent = "You won! Press any button to start again.";
